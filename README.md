@@ -42,7 +42,7 @@ DEST_DB_URL=postgresql://user:password@host:port/dbname
 1. Configure your database connections in the `.env` file
 2. Run the migration script:
 ```bash
-python migrate.py
+python railway_migration.py
 ```
 
 The script will:
