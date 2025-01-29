@@ -124,6 +124,7 @@ def migrate_database(source_url, destination_url):
         if dest_conn: dest_conn.close()
 
 if __name__ == "__main__":
+    
     SOURCE_DB_URL =  os.getenv('SOURCE_DB_URL')
     DEST_DB_URL = os.getenv('DEST_DB_URL')
     if not SOURCE_DB_URL or not DEST_DB_URL:
