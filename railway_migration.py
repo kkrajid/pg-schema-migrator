@@ -3,6 +3,7 @@ from psycopg2 import sql
 from io import BytesIO
 from urllib.parse import urlparse
 
+
 def parse_db_url(url):
     """Parse database URL into connection parameters"""
     parsed = urlparse(url)
@@ -120,7 +121,7 @@ def migrate_database(source_url, destination_url):
         if dest_conn: dest_conn.close()
 
 if __name__ == "__main__":
-    SOURCE_DB_URL = "postgresql://postgres:dokMzWIoIdTblnxAqKHlbZAaRxOTCrXg@roundhouse.proxy.rlwy.net:36356/railway"
-    DEST_DB_URL = "postgresql://postgres:ZDlJpsEBJcUYNqgvVGLwKRrxiDkKqlUZ@monorail.proxy.rlwy.net:13906/railway"
+    SOURCE_DB_URL = 
+    DEST_DB_URL = 
 
     migrate_database(SOURCE_DB_URL, DEST_DB_URL)
